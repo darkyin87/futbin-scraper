@@ -6,7 +6,12 @@ version = 18
 page = 'playerPrices'
 
 player_ids = {
-  'Arturo Vidal': 181872
+  'Arturo Vidal': 181872,
+  'Pierre-Emerick Aubameyang': 188567,
+  'Robert Lewandowski': 188545,
+  'Jerome Boateng': 183907,
+  'Sergio Ramos': 155862,
+  'Antoine Griezmann': 194765,
 }
 
 def fetch_prices():
