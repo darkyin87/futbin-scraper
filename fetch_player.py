@@ -12,6 +12,9 @@ player_ids = {
   'Jerome Boateng': 183907,
   'Sergio Ramos': 155862,
   'Antoine Griezmann': 194765,
+  'David Alaba': 197445,
+  'Paulo Dybala': 211110,
+  'Radja Nainggolan': 178518
 }
 
 def fetch_prices():
@@ -24,6 +27,6 @@ def fetch_prices():
   return ret_val
 
 
-#if __name__ == "__main__":
+# if __name__ == "__main__":
 #  prices = fetch_prices()
-
+#  print prices
