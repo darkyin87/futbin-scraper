@@ -2,7 +2,7 @@ import json
 
 from fetch_player import fetch_prices
 from mail import EmailAPI
-from sms import GoogleVoiceApi
+from sms import SmptpApi
 from raven.base import Client as SentryClient
 
 
@@ -13,7 +13,7 @@ def process_prices():
         print prices_str
         mail = EmailAPI()
         mail.send_email(text=prices_str, subject='Player Prices')
-        sms = GoogleVoiceApi()
+        sms = SmptpApi()
         sms.send_text(prices_str)
     except Exception:
         sentry_client = SentryClient()

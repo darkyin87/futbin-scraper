@@ -74,7 +74,7 @@ class SmptpApi():
                  + "Subject: %s\r\n" % self.subject
                  + "\r\n"
                  + msg)
-        server.sendmail(fromaddr, toaddrs, message)
+        server.sendmail(self.fromaddr, self.toaddrs, message)
         server.quit()
 
 
